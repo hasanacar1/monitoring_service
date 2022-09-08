@@ -1,0 +1,27 @@
+init_config:
+  auth_url: http://10.8.134.107/identity
+  cache_dir: /dev/shm
+init_config:
+  auth_url: http://10.8.134.107/identity
+  cache_dir: /dev/shm
+  customer_metadata:
+  - scale_group
+  disk_collection_period: 0
+  max_ping_concurrency: 8
+  metadata:
+  - scale_group
+  nova_refresh: 14400
+  password: secretservice
+  ping_check: sudo /bin/ip netns exec NAMESPACE /bin/ping -n -c1 -w1 -q
+  project_domain_name: Default
+  project_name: service
+  user_domain_name: Default
+  username: nova
+  vm_cpu_check_enable: true
+  vm_disks_check_enable: true
+  vm_extended_disks_check_enable: false
+  vm_network_check_enable: true
+  vm_ping_check_enable: true
+  vm_probation: 300
+  vnic_collection_period: 0
+instances: []
